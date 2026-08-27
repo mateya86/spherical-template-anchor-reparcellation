@@ -46,4 +46,4 @@ python validation/star_cross_validator.py
 
 ## Citation
 
-Ateya M (2026) STAR Reparcellation Software. Zenodo. https://doi.org/10.5281/zenodo.22117970
+Citation information will be updated after the first Zenodo release of this repository.

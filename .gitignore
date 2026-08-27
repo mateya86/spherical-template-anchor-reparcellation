@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local validation state
+subjects.json
+
+# Neuroimaging data and FreeSurfer outputs
+*.mgh
+*.mgz
+*.annot
+*.surf
+*.label
+*.nii
+*.nii.gz
+*.dcm
+*.ima
+
+# Generated results and figures
+results/
+outputs/
+subjects/
+*.tif
+*.tiff
+*.png
+*.pdf
+*.log
+
+# Local datasets
+*.csv
+*.json
+
+# Keep the repository example cohort
+!vertexwise/example_cohort.csv
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+``

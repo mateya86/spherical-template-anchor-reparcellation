@@ -1,0 +1,31 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Check Python syntax
+        run: |
+          python -m py_compile \
+            validation/star_cross_validator.py \
+            vertexwise/star_vertexwise_analysis.py \
+            vertexwise/create_star_heatmaps.py
+
+      - name: Check Bash syntax
+        run: |
+          bash -n \
+            pipeline/star_pipeline.sh \
+            vertexwise/run_vertexwise_cohort.sh

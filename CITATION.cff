@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "STAR Reparcellation Software"
+type: software
+authors:
+  - family-names: "Ateya"
+    given-names: "Muhammad"
+    orcid: "https://orcid.org/0000-0002-5451-300X"
+version: 1.0.1
+license: MIT
+repository-code: "https://github.com/mateya86/star-reparcellation"
+doi: "10.5281/zenodo.22117970"
